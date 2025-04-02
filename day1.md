@@ -70,12 +70,68 @@ let money = 100,000,000.00;
 #### ➕ 1. Arithmetic Operations
 Addition, Subtraction, Multiplication, Division, Modulo, Exponent  
 **Operators:** `+`, `-`, `*`, `/`, `%`, `**`
+### Example
+```javascript
+//Addition
+let sum = 10 + 5;
+console.log(sum); // 15
 
+//Subtraction
+let difference = 10 - 3;
+console.log(difference); // 7
+
+//Multiplication
+let product = 4 * 2;
+console.log(product); // 8
+
+//Division
+let quotient = 20 / 5;
+console.log(quotient); // 4
+
+//Modulo
+let remainder = 7 % 3;
+console.log(remainder); // 1
+
+//Exponent
+let power = 2 ** 3;
+console.log(power); // 8 (2 × 2 × 2)
+
+```
 ---
 
 #### 🧮 2. Assignment Operations
 **Operators:** `=`, `+=`, `-=`, `*=`
+### Example
+```javascript
+// Basic Assignment
+let x = 10;
+console.log(x); // 10
 
+// Add and Assign
+x += 5; // x = x + 5
+console.log(x); // 15
+
+// Subtract and Assign
+x -= 3; // x = x - 3
+console.log(x); // 12
+
+// Multiply and Assign
+x *= 2; // x = x * 2
+console.log(x); // 24
+
+// Divide and Assign
+x /= 4; // x = x / 4
+console.log(x); // 6
+
+// Modulo and Assign
+x %= 5; // x = x % 5
+console.log(x); // 1
+
+// Exponent and Assign
+x **= 3; // x = x ** 3
+console.log(x); // 1 (1 to the power of 3 is still 1)
+
+```
 ---
 
 #### 🧪 3. Comparison Operations
@@ -86,14 +142,63 @@ Addition, Subtraction, Multiplication, Division, Modulo, Exponent
 - `<`  
 - `<=`  
 - `>=`
+### Example
+```javascript
+// Equal (==) - compares value only (not type)
+console.log(5 == "5"); // true
 
+// Strict Equal (===) - compares value AND type
+console.log(5 === "5"); // false
+
+// Not Equal (!=) - value only
+console.log(10 != "10"); // false
+
+// Strict Not Equal (!==) - value and type
+console.log(10 !== "10"); // true
+
+// Greater Than (>)
+console.log(7 > 5); // true
+
+// Less Than (<)
+console.log(3 < 8); // true
+
+// Greater Than or Equal To (>=)
+console.log(5 >= 5); // true
+
+// Less Than or Equal To (<=)
+console.log(4 <= 2); // false
+
+```
 ---
 
 #### 🔗 4. Logical Operations
 - `&&` → and  
 - `||` → or  
 - `!` → not
+```javascript
+// AND (&&) - true only if both conditions are true
+console.log(true && true);   // true
+console.log(true && false);  // false
 
+// OR (||) - true if at least one condition is true
+console.log(true || false);  // true
+console.log(false || false); // false
+
+// NOT (!) - reverses the truthiness
+console.log(!true);  // false
+console.log(!false); // true
+
+// Combined Example
+let age = 20;
+let hasID = true;
+
+// Check if allowed to enter
+console.log(age >= 18 && hasID); // true
+
+// Check if minor or missing ID
+console.log(age < 18 || !hasID); // false
+~
+```
 ---
 
 ### ✅ What I Learned
