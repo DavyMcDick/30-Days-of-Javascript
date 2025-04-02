@@ -50,7 +50,15 @@ const country = "Philippines";
 - **Object** → `{ name: David, age: 21 }`
 - **Array** → `["hello", "apple", "bananq"]`
 - **Function** → `function() {}`
-
+### Example
+```javascript
+let name = "David";
+let age = 21;
+let male = true;
+let status;
+let life = null;
+let money = 100,000,000.00;
+```
 ---
 
 ### ⚙️ Operation
