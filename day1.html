@@ -11,7 +11,20 @@
       <label for="name">Enter your name:</label>
       <input type="text" id="name" name="name" required />
       <button type="submit">Greet Me</button>
+      <button type="button" id="clearbutton">DELETE</button>
     </form>
     <div id="greetingMessage"></div>
+    <script>
+        document.getElementById('greetingForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            const name = document.getElementById('name').value;
+            const greetingMessage = `Hello, ${name}! Welcome to the Greeting App.`;
+            document.getElementById('greetingMessage').innerText = greetingMessage;
+        });
+         document.getElementById('clearbutton').addEventListener('click', function(){
+            document.getElementById('greetingMessage').innerText = '';
+            document.getElementById('name').value = '';
+         })
+    </script>
   </body>
-</html>
+</html
