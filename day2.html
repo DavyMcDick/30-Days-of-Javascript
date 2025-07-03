@@ -14,6 +14,25 @@
 
       <div id="ageResult"></div>
     </form>
-    <script></script>
+    <script>
+      document
+        .getElementById("agecalculator")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const birthdate = document.getElementById("birthdate").value;
+          const birthDateObj = new Date(birthdate);
+          const today = new Date();
+          let age = today.getFullYear() - birthDateObj.getFullYear();
+          const monthDiff = today.getMonth() - birthDateObj.getMonth();
+          if (
+            monthDiff < 0 ||
+            (monthDiff === 0 && today.getDate() < birthDateObj.getDate())
+          ) {
+            age--;
+          }
+          const ageResult = `You are ${age} years old.`;
+          document.getElementById("ageResult").innerText = ageResult;
+        });
+    </script>
   </body>
 </html>
